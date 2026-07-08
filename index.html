@@ -20,10 +20,14 @@
                 max-width:800px;
                 margin:0 auto;
                 padding:16px;
+                display:flex;
               } 
               img{
                 width:80px;
                 height:80px;
+              }
+             .artigo-autor {
+                font-weight: ;
               }
         </style>
     </head>
@@ -34,9 +38,21 @@
         </header>
             <main>
                 <img src="ima.png" alt="Logotipo em arte pixelada (pixel art) para um blog de memes. O fundo é dividido verticalmente ao meio, com o lado esquerdo em rosa vibrante e o lado direito em roxo. No centro, há um rosto redondo roxo com uma expressão facial cômica e exagerada de meme, com olhos arregalados olhando para os lados e um grande sorriso aberto. Acima do rosto, está escrita a palavra "MEME" e, abaixo, a palavra "BLOG", ambas em letras maiúsculas brancas com estilo de videogame retrô.">
-                <h2>meu primeiro pots</h2>
-                <p>por: Nicoly Ferreira</p>
-                <p>boas-vindas ao meu novo blog! aqui vou compartilhar meus memes favoritos.</p>
+                <div>
+                    <h2>meu primeiro pots</h2>
+                    <p class="artigo-autor">por: Nicoly Ferreira</p>
+                    <p>boas-vindas ao meu novo blog! aqui vou compartilhar meus memes favoritos.</p>
+                    <button>💖 <samp>0</samp></button>
+                </div>
             </main>
         </body>
+        <script>
+            const botao = document.querySelector("button");
+            botao.addEventListener("click", botaoclicado);
+
+            function botaoclicado(){
+                console.log("fui clicado");
+            }
+
+        </script>
     </html>
